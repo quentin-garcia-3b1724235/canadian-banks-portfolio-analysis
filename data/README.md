@@ -11,3 +11,7 @@ For educational purposes only.
 
 -dividends.csv: cash dividends per share, recorded on the ex-dividend date.
 
+-tbill_3m_yield.csv: daily yield (% per year) of 3-month Government of Canada Treasury bills, from the Bank of Canada Valet API (series TB.CDN.90D.MID), used as the risk-free rate.
+
+
+
