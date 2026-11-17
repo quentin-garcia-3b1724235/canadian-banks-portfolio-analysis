@@ -1,0 +1,67 @@
+try,month,version,problems,review,note
+try 1,2007-02,constrained,direction: 12 months vs market,false alarm,"12 months: 'falling short' is correct, but not in the word list"
+try 1,2007-03,free,direction: month vs market; direction: volatility vs usual,rule error,"Month: +1.1% vs +1.2% called 'in line', but the rule keeps 'in line' for equal values (should be 'worse'). Volatility 11.4% vs 11.1% is within 10%, so the rule says 'close', not 'slightly above'."
+try 1,2007-04,free,direction: volatility vs usual,rule error,"Volatility 11.3% vs usual 11.1% is within 10%, so the rule says 'close'; the text says 'above' (true, but breaks the rule)"
+try 1,2007-05,free,direction: volatility vs usual,rule error,"Volatility 10.5% vs usual 11.1% is within 10%, so the rule says 'close'; the text says 'below' (true, but breaks the rule)"
+try 1,2007-06,free,direction: volatility vs usual,rule error,"Volatility 10.5% vs usual 11.1% is within 10%, so the rule says 'close'; the text says 'below' (true, but breaks the rule)"
+try 1,2007-07,free,direction: volatility vs usual,rule error,"Volatility 10.2% vs usual 11.1% is within 10%, so the rule says 'close'; the text says 'below' (true, but breaks the rule)"
+try 1,2007-08,free,direction: 12 months vs market; direction: volatility vs usual,rule error,"12 months: 'falling short' is correct, but not in the word list; Volatility 11.5% vs usual 11.1% is within 10%, so the rule says 'close'; the text says 'above' (true, but breaks the rule)"
+try 1,2007-08,constrained,direction: 12 months vs market,false alarm,"12 months: 'falling short' is correct, but not in the word list"
+try 1,2007-09,free,direction: volatility vs usual,rule error,"Volatility 11.7% vs usual 11.1% is within 10%, so the rule says 'close'; the text says 'above' (true, but breaks the rule)"
+try 1,2007-10,free,direction: volatility vs usual,rule error,"Volatility 12.2% vs usual 11.1% is within 10%, so the rule says 'close'; the text says 'above' (true, but breaks the rule)"
+try 1,2007-11,free,direction: 12 months vs market,fact error,Says the 12-month return of +2.0% was 'outperforming' the market's +9.6%: it was worse.
+try 1,2007-11,constrained,direction: volatility vs usual,false alarm,"Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2007-12,constrained,direction: volatility vs usual,false alarm,"Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2008-01,constrained,direction: 12 months vs market; direction: volatility vs usual,false alarm,"12 months: 'falling short' is correct, but not in the word list; Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2008-03,constrained,sign: -1.6%; direction: volatility vs usual,fact error,'the market which gained -1.6%': the market fell. The model cannot see the sign behind [MARKET_1M] and guessed 'gained'. Other flags are false alarms (word list).
+try 1,2008-04,constrained,direction: 12 months vs market; direction: volatility vs usual,false alarm,"12 months: 'falling short' is correct, but not in the word list; Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2008-05,constrained,direction: volatility vs usual,false alarm,"Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2008-06,constrained,sign: -1.9%; direction: volatility vs usual,fact error,'the market which gained -1.9%': the market fell. The model cannot see the sign behind [MARKET_1M] and guessed 'gained'. Other flags are false alarms (word list).
+try 1,2008-07,constrained,direction: 12 months vs market; direction: volatility vs usual,false alarm,"12 months: 'falling short' is correct, but not in the word list; Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2008-08,constrained,direction: volatility vs usual,false alarm,"Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2008-09,constrained,direction: 12 months vs market; direction: volatility vs usual,false alarm,"12 months: 'falling short' is correct, but not in the word list; Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2008-10,constrained,direction: 12 months vs market,false alarm,"12 months: 'exceeding' is correct, but not in the word list"
+try 1,2008-11,constrained,direction: volatility vs usual,false alarm,"Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2008-12,constrained,sign: -23.1%; direction: volatility vs usual,fact error,'highest twelve-month gain of -23.1%': 'gain' for a negative return. The model cannot see the sign behind [BEST_12M]. Volatility flag is a false alarm ('exceeding').
+try 1,2009-01,constrained,direction: volatility vs usual,false alarm,"Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2009-02,constrained,direction: 12 months vs market,false alarm,"'surpassing' means better: correct, but not in the word list. Not flagged: 'which fell -6.1%' is a double negative (style)."
+try 1,2009-03,constrained,sign: +7.7%; direction: 12 months vs market,fact error,'the market which fell +7.7%': the market rose. The model cannot see the sign behind [MARKET_1M] and guessed 'fell'. Other flags are false alarms (word list).
+try 1,2009-04,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2009-05,free,direction: month vs market,rule error,"Month: +10.6% vs +10.8% called 'in line', but the rule keeps 'in line' for equal values (should be 'worse')."
+try 1,2009-05,constrained,direction: volatility vs usual,false alarm,"Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2009-06,constrained,sign: +0.5%; direction: 12 months vs market,fact error,'the market which fell +0.5%': the market rose. The model cannot see the sign behind [MARKET_1M] and guessed 'fell'. Other flags are false alarms (word list).
+try 1,2009-07,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2009-08,constrained,sign: +0.8%; direction: 12 months vs market,fact error,'the market which fell +0.8%': the market rose. The model cannot see the sign behind [MARKET_1M] and guessed 'fell'. Other flags are false alarms (word list).
+try 1,2009-09,constrained,direction: volatility vs usual,false alarm,"Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2009-10,constrained,direction: volatility vs usual,false alarm,"Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2009-11,constrained,sign: +5.6%; direction: 12 months vs market,fact error,'the market which fell +5.6%': the market rose. The model cannot see the sign behind [MARKET_1M] and guessed 'fell'. Other flags are false alarms (word list).
+try 1,2009-12,constrained,direction: volatility vs usual,false alarm,"Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2010-01,constrained,direction: volatility vs usual,false alarm,"Volatility: 'exceeding its usual level' means above: correct, but not in the word list"
+try 1,2010-02,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2010-03,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2010-04,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2010-07,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2010-08,free,direction: 12 months vs market,false alarm,"12 months: 'falling short' is correct, but not in the word list"
+try 1,2010-09,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2011-01,free,direction: 12 months vs market,false alarm,"12 months: 'falling short' is correct, but not in the word list"
+try 1,2011-03,free,direction: 12 months vs market,false alarm,"12 months: 'falling short' is correct, but not in the word list"
+try 1,2011-04,constrained,sign: -1.1%,fact error,'the market which gained -1.1%': the market fell. The model cannot see the sign behind [MARKET_1M] and guessed 'gained'.
+try 1,2011-05,constrained,sign: -0.6%,fact error,'the market which gained -0.6%': the market fell. The model cannot see the sign behind [MARKET_1M] and guessed 'gained'.
+try 1,2011-06,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2011-08,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2011-09,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2011-10,free,direction: volatility vs usual,rule error,"Volatility 16.6% vs usual 18.4% is within 10%, so the rule says 'close'; the text says 'below' (true, but breaks the rule)"
+try 1,2011-11,free,direction: volatility vs usual,rule error,"Volatility 17.5% vs usual 18.1% is within 10%, so the rule says 'close'; the text says 'below' (true, but breaks the rule)"
+try 1,2011-12,free,direction: volatility vs usual,rule error,"Volatility 17.5% vs usual 18.0% is within 10%, so the rule says 'close'; the text says 'below' (true, but breaks the rule)"
+try 1,2011-12,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2012-02,free,direction: volatility vs usual,rule error,"Volatility 17.3% vs usual 17.6% is within 10%, so the rule says 'close'; the text says 'below' (true, but breaks the rule)"
+try 1,2012-02,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2012-03,free,direction: volatility vs usual,rule error,"Volatility 17.3% vs usual 17.6% is within 10%, so the rule says 'close'; the text says 'below' (true, but breaks the rule)"
+try 1,2012-03,constrained,sign: -1.6%; direction: 12 months vs market,fact error,'the market which gained -1.6%': the market fell. The model cannot see the sign behind [MARKET_1M] and guessed 'gained'. Other flags are false alarms (word list).
+try 1,2012-04,free,direction: volatility vs usual,rule error,"Volatility 17.4% vs usual 17.6% is within 10%, so the rule says 'close'; the text says 'below' (true, but breaks the rule)"
+try 1,2012-05,constrained,sign: -6.5%; direction: 12 months vs market,fact error,'the market which gained -6.5%': the market fell. The model cannot see the sign behind [MARKET_1M] and guessed 'gained'. Other flags are false alarms (word list).
+try 1,2012-06,free,direction: volatility vs usual; best bank; cause or context: ['driven by'],fact error,"'Performance was driven by TD' invents a cause. Also: the best-bank flag is a false alarm (the comma puts 'TD' and 'the highest returner' in different clauses); volatility 18.0% vs 17.6% is within 10%, so the rule says 'close' (rule error)."
+try 1,2012-07,free,direction: volatility vs usual,rule error,"Volatility 17.9% vs usual 17.6% is within 10%, so the rule says 'close'; the text says 'above' (true, but breaks the rule)"
+try 1,2012-07,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2012-10,constrained,direction: 12 months vs market,false alarm,"12 months: 'surpassing' is correct, but not in the word list"
+try 1,2012-11,constrained,sign: -1.7%; direction: 12 months vs market,fact error,'the market which gained -1.7%': the market fell. The model cannot see the sign behind [MARKET_1M] and guessed 'gained'. Other flags are false alarms (word list).
